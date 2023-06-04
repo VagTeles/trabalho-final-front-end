@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>API - Rick And Morty</title>
+	</head>
+
+	<body>
+		<main>
+			<section class="container">
+				<h1>API Rick and Morty</h1>
+				<div>
+					<input
+						type="text"
+						id="pesquisar"
+						placeholder="Buscar personagem(Ex:rick sanchez) "
+					/>
+					<button id="btn-pesquisar" onclick="oneCharacters()">Buscar</button>
+				</div>
+			</section>
+			<section>
+				<div id="cardsContainer"></div>
+				<section id="pagination"></section>
+			</section>
+			<section class="containerImage">
+				<img
+					src="./images/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png"
+					alt="imagem do rick and Morty saindo do portal"
+				/>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footerContainer">
+				<p class="ptext">Personagens: 826</p>
+				<p class="ptext">Localizações: 126</p>
+				<p class="ptext">Episódios: 51</p>
+			</div>
+			<div class="divCreditos">
+				Desenvolvido por: <span>Vagner Teles de Oliviera</span> em 2023
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link
+			href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
